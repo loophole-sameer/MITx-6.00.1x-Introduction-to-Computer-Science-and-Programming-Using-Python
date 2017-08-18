@@ -8,7 +8,7 @@
 
 total = 0
  
-for vowel in s:
+for vowel in s.lower():
     if vowel in 'aeiou':
         total += 1
 
