@@ -25,3 +25,14 @@ def getAvailableLetters(lettersGuessed):
 
 ##print getAvailableLetters(['e', 'i', 'k', 'p', 'r', 's'])
 print getAvailableLetters(['e', 'i', 'k', 'p', 'r', 's']) # abcdfghjlmnoqtuvwxyz
+
+
+# next solution
+def removeletter(letterguessed):
+	import string
+	gk = list(string.ascii_lowercase)
+	for letter in letterguessed:
+		if letter in gk:
+			gk.remove(letter)
+	return ''.join(gk)
+print(removeletter(list('sdcrevfd'))) # abghijklmnopqtuwxyz
